@@ -1,0 +1,80 @@
+body {
+    background-color:#DDE1D4;
+    padding:15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: 650px;
+    width: 100%;
+    height: 100vh;
+    margin:0 auto;
+  }
+  
+  .gird {
+    display: grid;
+    grid-template-columns: 210px 210px 210px;
+    grid-template-rows: 90px repeat(2, 200px) 400px;
+    gap: 10px;
+  }
+  
+  .header {
+    background: black;
+    color: white;
+    font-size: 15px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .header > div {
+    display: flex;
+  }
+  
+  .header ul:first-child {
+    margin-right: 20px;
+    margin-left:  10px;
+  }
+  
+  li {
+    margin-bottom: 8px;
+  }
+  
+  .content {
+    background: rgb(247,64,17);
+    color: black;
+    font-size: 180px;
+    font-weight: 700;
+    
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .side {
+    background: rgb(247,64,17);
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+  
+  .bottom {
+    background: rgb(247,64,17);;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #religion {
+    color: black;
+    font-size: 180px;
+    font-weight: 700;
+  }
+  
+  #with {
+    color: rgb(243, 241, 212);
+    font-size: 40px;
+    padding-left: 15px;
+  }
